@@ -1,2 +1,2 @@
-# parliaments
-Display last law projects and proposals from french parliaments
+# parliament
+Display last law projects and proposals from french parliament
