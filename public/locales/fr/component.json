@@ -1,0 +1,32 @@
+{
+  "MainHeader": {
+    "Languages": {
+      "languagesDropdown": {
+        "labelledBy": "Choisir une langue"
+      }
+    }
+  },
+  "Drawer": {
+    "separators": {
+      "authentication": "Authentification",
+      "navigation": "Navigation",
+      "settings": "Paramètres"
+    }
+  },
+  "FeedItem": {
+    "link": "En savoir plus",
+    "categories": {
+      "proposal": "proposition de loi",
+      "project": "projet de loi",
+      "constitutional": "proposition de loi constitutionnelle",
+      "organic": "proposition de loi organique",
+      "other": "autre"
+    },
+    "author": {
+      "senate": "Sénat",
+      "assembly": "Assemblée nationale",
+      "constitutionalCouncil": "Conseil constitutionnel",
+      "other": "autre"
+    }
+  }
+}
