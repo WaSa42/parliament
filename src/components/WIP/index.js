@@ -25,7 +25,7 @@ class WIP extends React.Component {
       <div className="alert alert-warning alert-dismissible fade show" role="alert">
         <strong className="mr-2">{t('component:WIP.strong')}</strong>
         {t('component:WIP.text')}
-        <a href={packageJSON.homepage} className="alert-link ml-2">
+        <a href={packageJSON.repository} className="alert-link ml-2">
           <FontAwesomeIcon icon={faGithub} className="mr-2" />
           {t('component:WIP.src')}
         </a>
