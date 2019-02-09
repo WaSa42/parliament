@@ -1,16 +1,16 @@
 {
   "main.css": "/parliament/static/css/main.0b57c19d.chunk.css",
-  "main.js": "/parliament/static/js/main.9cbcc900.chunk.js",
-  "main.js.map": "/parliament/static/js/main.9cbcc900.chunk.js.map",
+  "main.js": "/parliament/static/js/main.e6c80254.chunk.js",
+  "main.js.map": "/parliament/static/js/main.e6c80254.chunk.js.map",
   "static/css/1.64cac4ec.chunk.css": "/parliament/static/css/1.64cac4ec.chunk.css",
   "static/js/1.01353336.chunk.js": "/parliament/static/js/1.01353336.chunk.js",
   "static/js/1.01353336.chunk.js.map": "/parliament/static/js/1.01353336.chunk.js.map",
   "runtime~main.js": "/parliament/static/js/runtime~main.f5f773ca.js",
   "runtime~main.js.map": "/parliament/static/js/runtime~main.f5f773ca.js.map",
-  "static/media/App.css": "/parliament/static/media/gb.4f1b7af5.svg",
+  "static/media/App.css": "/parliament/static/media/fr.b1156355.svg",
   "static/css/main.0b57c19d.chunk.css.map": "/parliament/static/css/main.0b57c19d.chunk.css.map",
   "static/css/1.64cac4ec.chunk.css.map": "/parliament/static/css/1.64cac4ec.chunk.css.map",
   "index.html": "/parliament/index.html",
-  "precache-manifest.d7ac1c400f410cb6a59b378685694417.js": "/parliament/precache-manifest.d7ac1c400f410cb6a59b378685694417.js",
+  "precache-manifest.b4150a72364443ee32ac24e656f53c0e.js": "/parliament/precache-manifest.b4150a72364443ee32ac24e656f53c0e.js",
   "service-worker.js": "/parliament/service-worker.js"
 }

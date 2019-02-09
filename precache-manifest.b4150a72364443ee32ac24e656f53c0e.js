@@ -20,15 +20,15 @@ self.__precacheManifest = [
     "url": "/parliament/static/js/runtime~main.f5f773ca.js"
   },
   {
-    "revision": "9cbcc900f9df2170616a",
-    "url": "/parliament/static/js/main.9cbcc900.chunk.js"
+    "revision": "e6c802544d34132bec1e",
+    "url": "/parliament/static/js/main.e6c80254.chunk.js"
   },
   {
     "revision": "01353336c157a28a4e81",
     "url": "/parliament/static/js/1.01353336.chunk.js"
   },
   {
-    "revision": "9cbcc900f9df2170616a",
+    "revision": "e6c802544d34132bec1e",
     "url": "/parliament/static/css/main.0b57c19d.chunk.css"
   },
   {
@@ -36,7 +36,7 @@ self.__precacheManifest = [
     "url": "/parliament/static/css/1.64cac4ec.chunk.css"
   },
   {
-    "revision": "1f07cdb3d0e6cd8e4a57bb85d4ccc938",
+    "revision": "a32952f1d5b818257a3e7969922f2b5e",
     "url": "/parliament/index.html"
   }
 ];
