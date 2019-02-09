@@ -7,10 +7,8 @@ import { persistStore, persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 import { PersistGate } from 'redux-persist/integration/react';
 import { I18nextProvider } from 'react-i18next';
-import createRavenMiddleware from 'raven-for-redux';
 import { createLogger } from 'redux-logger';
 import thunk from 'redux-thunk';
-import Raven from 'raven-js';
 
 import { vanillaPromise, readyStatePromise } from './middlewares/promise';
 import errorMiddleware from './middlewares/errorMiddleware';
@@ -22,12 +20,10 @@ import i18n from './i18n';
 const middleWares = [thunk, errorMiddleware];
 if (process.env.NODE_ENV === 'development') {
   middleWares.push(createLogger());
-} else {
-  Raven.config('CHANGE WITH SENTRY CONFIG').install();
 }
 
 // Should be pushed after redux-logger.
-middleWares.concat([vanillaPromise, readyStatePromise, createRavenMiddleware()]);
+middleWares.concat([vanillaPromise, readyStatePromise]);
 
 const rootPersistConfig = {
   key: 'root',
