@@ -5,3 +5,4 @@
 /scripts
 .idea
 /src/registerServiceWorker.js
+/src/serviceWorker.js

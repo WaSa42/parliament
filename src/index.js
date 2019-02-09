@@ -10,6 +10,8 @@ import { I18nextProvider } from 'react-i18next';
 import { createLogger } from 'redux-logger';
 import thunk from 'redux-thunk';
 
+import * as serviceWorker from './serviceWorker';
+
 import { vanillaPromise, readyStatePromise } from './middlewares/promise';
 import errorMiddleware from './middlewares/errorMiddleware';
 import reducers from './reducers';
@@ -65,5 +67,10 @@ class Root extends React.Component {
 }
 
 ReactDOM.render(<Root />, document.getElementById('root'));
+
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: http://bit.ly/CRA-PWA
+serviceWorker.unregister();
 
 export { store as default };
