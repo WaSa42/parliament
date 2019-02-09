@@ -1,0 +1,19 @@
+{
+  "NoMatch": {
+    "card": {
+      "title": "Not found.",
+      "text": "Nous n'avons pas pu trouver la page que vous recherchez.",
+      "button": "Retour à l'accueil"
+    }
+  },
+  "NotAllowed": {
+    "card": {
+      "title": "Stop !",
+      "text": "Êtes-vous sûr d'avoir le droit d'accèder à cette page ?",
+      "button": "Retour à l'accueil"
+    }
+  },
+  "Home": {
+
+  }
+}
