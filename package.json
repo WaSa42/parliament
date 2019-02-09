@@ -1,6 +1,6 @@
 {
-  "name": "front-starter-kit",
-  "homepage": "https://github.com/WaSa42/front-starter-kit",
+  "name": "parliament",
+  "homepage": "https://github.com/WaSa42/parliament",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {

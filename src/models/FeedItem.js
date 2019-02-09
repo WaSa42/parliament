@@ -2,6 +2,9 @@ import some from 'lodash/some';
 import PropTypes from 'prop-types';
 import moment from 'moment-timezone';
 
+import { faLandmark } from '@fortawesome/free-solid-svg-icons/faLandmark';
+import { faPlaceOfWorship } from '@fortawesome/free-solid-svg-icons/faPlaceOfWorship';
+
 class FeedItem {
   constructor(props) {
     const { author, categories, description, id, link, pubDate, title } = props;
@@ -46,13 +49,21 @@ class FeedItem {
 }
 
 FeedItem.LAST_ID = -1;
+
 FeedItem.AUTHORS = ['senate', 'assembly', 'constitutionalCouncil', 'other'];
-FeedItem.CATEGORIES = ['proposal', 'project', 'constitutional', 'organic', 'other'];
-FeedItem.CATEGORIES_MATCHING = { // TODO: Maybe turning that into regex ?
+FeedItem.AUTHORS_ICON = {
+  senate: faPlaceOfWorship,
+  assembly: faLandmark,
+};
+
+FeedItem.CATEGORIES = ['proposal', 'project', 'constitutional', 'organic', 'program', 'resolution', 'other'];
+FeedItem.CATEGORIES_MATCHING = { // TODO: Maybe turning this into regex ?
   proposal: ['proposition de loi'],
   project: ['projet de loi'],
   constitutional: ['proposition de loi constitutionnelle'],
   organic: ['projet de loi organique'],
+  program: ['projet de loi de programmation'],
+  resolution: ['proposition de résolution'],
 };
 
 export default FeedItem;

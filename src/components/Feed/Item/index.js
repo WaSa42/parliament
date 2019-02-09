@@ -8,6 +8,7 @@ import { faPencilAlt } from '@fortawesome/free-solid-svg-icons/faPencilAlt';
 import { faClock } from '@fortawesome/free-regular-svg-icons/faClock';
 
 import FeedItem from '../../../models/FeedItem';
+import FeedItemBadges from './Badges';
 
 const FeedItemComponent = ({ item, t }) => {
   const { title, pubDate, description } = item;
@@ -19,6 +20,7 @@ const FeedItemComponent = ({ item, t }) => {
       </div>
       <div className="card">
         <div className="card-body">
+          <FeedItemBadges {...item} />
           <h5 className="card-title">{title}</h5>
           <p className="card-subtitle mb-2 text-muted">
             <FontAwesomeIcon icon={faClock} />
@@ -26,7 +28,10 @@ const FeedItemComponent = ({ item, t }) => {
             {moment(pubDate).format('LLLL')}
           </p>
           <p className="card-text">{description}</p>
-          <div className="text-right">
+          <div className="text-right d-none d-sm-block">
+            <button type="button" className="btn btn-link card-link">
+              {t('component:FeedItem.news')}
+            </button>
             <Link
               to={new FeedItem(item).getPageLink()}
               className="card-link"

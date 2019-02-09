@@ -13,20 +13,28 @@
       "settings": "Paramètres"
     }
   },
+  "WIP": {
+    "strong": "Développement en cours !",
+    "text": "Ce projet a encore besoin de travail pour être fonctionnel. Merci de votre compréhension.",
+    "src": "Sources"
+  },
   "FeedItem": {
     "link": "En savoir plus",
+    "news": "Dans la presse",
     "categories": {
-      "proposal": "proposition de loi",
-      "project": "projet de loi",
-      "constitutional": "proposition de loi constitutionnelle",
-      "organic": "proposition de loi organique",
-      "other": "autre"
+      "proposal": "Proposition de loi",
+      "project": "Projet de loi",
+      "constitutional": "Proposition de loi constitutionnelle",
+      "organic": "Proposition de loi organique",
+      "program": "Projet de loi de programmation",
+      "resolution": "Proposition de résolution",
+      "other": "Autre"
     },
     "author": {
       "senate": "Sénat",
       "assembly": "Assemblée nationale",
       "constitutionalCouncil": "Conseil constitutionnel",
-      "other": "autre"
+      "other": "Autre"
     }
   }
 }

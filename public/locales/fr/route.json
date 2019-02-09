@@ -1,8 +1,8 @@
 {
   "home": {
     "name": "Accueil",
-    "description": "Suivez en direct l'actualité du Sénat et de l'Assemblée avec un résumé chronologique des projets et propositions de lois françaises.",
-    "description_short": "Résumé de l'actualité du Sénat et de l'Assemblée."
+    "description": "Suivez l'actualité du Sénat et de l'Assemblée avec un résumé chronologique des projets et propositions de lois françaises.",
+    "description_short": "Résumé et actualité de la vie parlementaire."
   },
   "notAllowed": {
     "name": "401"

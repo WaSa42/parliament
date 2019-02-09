@@ -3,9 +3,9 @@
   "undefined": "Non défini",
   "splashLoading": "Chargement...",
   "project": {
-    "title": "France Parlement",
-    "name": "FR Parlement",
-    "shortName": "FR-PLM"
+    "title": "Le Parlement Français",
+    "name": "Parlement Français",
+    "shortName": "LPFR"
   },
   "language": {
     "en": "English",

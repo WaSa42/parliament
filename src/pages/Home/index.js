@@ -13,6 +13,7 @@ import Title from '../../components/MainHeader/Title';
 import Loader from '../../components/Loader';
 import FeedItem from '../../models/FeedItem';
 import Feed from '../../components/Feed';
+import WIP from '../../components/WIP';
 
 class Home extends React.Component {
   constructor(props) {
@@ -51,6 +52,7 @@ class Home extends React.Component {
       <div id="home">
         <Title>{t('route:home.description_short')}</Title>
         <div className="container">
+          <WIP />
           {isFetching && <Loader />}
           {feedItems && <Feed items={Object.values(feedItems)} />}
         </div>

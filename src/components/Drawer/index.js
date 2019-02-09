@@ -47,59 +47,61 @@ const Drawer = ({ dispatch, isOpen, t }) => (
           <h3>{t('project.title')}</h3>
         </Link>
       </header>
-      <section>
-        <ul className="fa-ul">
-          <li className="nav-item">
-            <Link className="nav-link" to="/noMatch" onClick={() => close(dispatch)}>
-              <FontAwesomeIcon icon={faCircle} listItem />
-              &nbsp;No match
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link" to={routes.notAllowed} onClick={() => close(dispatch)}>
-              <FontAwesomeIcon icon={faCircle} listItem />
-              &nbsp;Not Allowed
-            </Link>
-          </li>
-        </ul>
-      </section>
-      <section>
-        <DrawerSeparator>Separator</DrawerSeparator>
-        <ul className="fa-ul">
-          <li className="nav-item">
-            <Link className="nav-link" to={routes.home} onClick={() => close(dispatch)}>
-              <FontAwesomeIcon icon={faCircle} listItem />
-              &nbsp;Link
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link" to={routes.home} onClick={() => close(dispatch)}>
-              <FontAwesomeIcon icon={faCircle} listItem />
-              &nbsp;Link
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link" to={routes.home} onClick={() => close(dispatch)}>
-              <FontAwesomeIcon icon={faCircle} listItem />
-              &nbsp;Link
-            </Link>
-          </li>
-        </ul>
-      </section>
-      <footer>
-        <a className="nav-link" href="/" target="_blank">
-          <FontAwesomeIcon icon={faFacebook} />
-        </a>
-        <a className="nav-link" href="/" target="_blank">
-          <FontAwesomeIcon icon={faTwitter} />
-        </a>
-        <a className="nav-link" href="/" target="_blank">
-          <FontAwesomeIcon icon={faYoutube} />
-        </a>
-        <Link className="nav-link" to="/" onClick={() => close(dispatch)}>
-          <FontAwesomeIcon icon={faEnvelope} />
-        </Link>
-      </footer>
+      {() => [
+        <section>
+          <ul className="fa-ul">
+            <li className="nav-item">
+              <Link className="nav-link" to="/noMatch" onClick={() => close(dispatch)}>
+                <FontAwesomeIcon icon={faCircle} listItem />
+                &nbsp;No match
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to={routes.notAllowed} onClick={() => close(dispatch)}>
+                <FontAwesomeIcon icon={faCircle} listItem />
+                &nbsp;Not Allowed
+              </Link>
+            </li>
+          </ul>
+        </section>,
+        <section>
+          <DrawerSeparator>Separator</DrawerSeparator>
+          <ul className="fa-ul">
+            <li className="nav-item">
+              <Link className="nav-link" to={routes.home} onClick={() => close(dispatch)}>
+                <FontAwesomeIcon icon={faCircle} listItem />
+                &nbsp;Link
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to={routes.home} onClick={() => close(dispatch)}>
+                <FontAwesomeIcon icon={faCircle} listItem />
+                &nbsp;Link
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to={routes.home} onClick={() => close(dispatch)}>
+                <FontAwesomeIcon icon={faCircle} listItem />
+                &nbsp;Link
+              </Link>
+            </li>
+          </ul>
+        </section>,
+        <footer>
+          <a className="nav-link" href="/" target="_blank">
+            <FontAwesomeIcon icon={faFacebook} />
+          </a>
+          <a className="nav-link" href="/" target="_blank">
+            <FontAwesomeIcon icon={faTwitter} />
+          </a>
+          <a className="nav-link" href="/" target="_blank">
+            <FontAwesomeIcon icon={faYoutube} />
+          </a>
+          <Link className="nav-link" to="/" onClick={() => close(dispatch)}>
+            <FontAwesomeIcon icon={faEnvelope} />
+          </Link>
+        </footer>,
+      ]}
     </nav>
   </Menu>
 );

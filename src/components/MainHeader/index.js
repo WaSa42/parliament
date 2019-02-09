@@ -27,7 +27,7 @@ class MainHeader extends React.Component {
             <Link to={routes.home} className="navbar-brand mb-0 h1 d-none d-md-inline">
               {t('project.title')}
             </Link>
-            <div className="btn-drawer my-2 ml-2 ml-sm-0 mr-2 mr-sm-3">
+            <div className="btn-drawer my-2 ml-2 ml-sm-0 mr-2 mr-sm-3 d-none">
               <button
                 className="btn"
                 type="button"
@@ -39,7 +39,7 @@ class MainHeader extends React.Component {
                 <FontAwesomeIcon icon={faBars} />
               </button>
             </div>
-            <p id="title-dom" className="navbar-text mr-auto" />
+            <p id="title-dom" className="navbar-text mr-auto px-3 p-md-0" />
             <div id="side-action-dom" />
           </div>
         </nav>
