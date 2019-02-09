@@ -47,7 +47,7 @@ const Drawer = ({ dispatch, isOpen, t }) => (
           <h3>{t('project.title')}</h3>
         </Link>
       </header>
-      {() => [
+      {false && [
         <section>
           <ul className="fa-ul">
             <li className="nav-item">

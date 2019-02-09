@@ -3,6 +3,7 @@ import { t } from 'i18next';
 import { matchPath } from 'react-router-dom';
 
 export const routes = {
+  feedItem: '/feed/item/:itemId',
   home: '/',
   notAllowed: '/notAllowed',
 };

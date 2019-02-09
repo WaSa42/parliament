@@ -22,6 +22,7 @@ import Layout from '../Layout';
 import NotAllowed from '../../pages/NotAllowed';
 import NoMatch from '../../pages/NoMatch';
 import Home from '../../pages/Home';
+import FeedItem from '../../pages/FeedItem';
 
 class App extends React.Component {
   componentDidMount() {
@@ -46,6 +47,7 @@ class App extends React.Component {
           <Layout>
             <Switch>
               <Route exact path={routes.home} component={Home} />
+              <Route exact path={routes.feedItem} component={FeedItem} />
               <Route path={routes.notAllowed} component={NotAllowed} />
               <Route component={NoMatch} />
             </Switch>

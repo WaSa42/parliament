@@ -5,11 +5,14 @@ import moment from 'moment-timezone';
 import { faLandmark } from '@fortawesome/free-solid-svg-icons/faLandmark';
 import { faPlaceOfWorship } from '@fortawesome/free-solid-svg-icons/faPlaceOfWorship';
 
+import { routes } from '../helpers/routes';
+
 class FeedItem {
   constructor(props) {
-    const { author, categories, description, id, link, pubDate, title } = props;
+    const { author, categories, description, guid, id, link, pubDate, title } = props;
 
     this.id = id;
+    this.guid = guid;
     this.author = author;
     this.title = title;
     this.description = description;
@@ -21,6 +24,7 @@ class FeedItem {
   static getShape() {
     return {
       id: PropTypes.string.isRequired,
+      guid: PropTypes.string.isRequired,
       author: PropTypes.oneOf(FeedItem.AUTHORS).isRequired,
       title: PropTypes.string.isRequired,
       description: PropTypes.string,
@@ -44,11 +48,9 @@ class FeedItem {
   }
 
   getPageLink() {
-    return `/feed/item/${this.id}`;
+    return routes.feedItem.replace(':itemId', this.id);
   }
 }
-
-FeedItem.LAST_ID = -1;
 
 FeedItem.AUTHORS = ['senate', 'assembly', 'constitutionalCouncil', 'other'];
 FeedItem.AUTHORS_ICON = {

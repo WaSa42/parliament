@@ -9,7 +9,9 @@ import {
   UPDATE_ENTITIES,
 } from '../actions/entities';
 
-const initialEntitiesState = {};
+const initialEntitiesState = {
+  feedItems: {},
+};
 
 function receiveEntities(state, action) {
   const { entities } = action;

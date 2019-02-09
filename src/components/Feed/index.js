@@ -20,10 +20,11 @@ class Feed extends React.Component {
 
       const nextItem = items[i + 1];
       if (nextItem && !moment(nextItem.pubDate).isSame(item.pubDate, 'day')) {
+        const dateString = moment(nextItem.pubDate).format('LL');
         rendering.push(
-          <li className="date-separator">
+          <li className="date-separator" key={`date-separator-${dateString}`}>
             <FontAwesomeIcon icon={faCalendarAlt} className="mr-2" />
-            {moment(nextItem.pubDate).format('LL')}
+            {dateString}
           </li>,
         );
       }

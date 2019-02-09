@@ -11,7 +11,7 @@ export const get = (callbacks, payload) => {
     items: json.items.map((item) => {
       const newData = {
         ...item,
-        id: item.guid.replace('http://www.senat.fr/', '').replace('.html', '').replace('/', '_'),
+        id: `senate_${item.guid.replace('http://www.senat.fr/', '').replace('.html', '').replace('/', '_')}`,
         author: 'senate',
         categories: FeedItem.parseCategories(item.categories),
       };
