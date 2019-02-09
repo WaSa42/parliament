@@ -20,23 +20,23 @@ self.__precacheManifest = [
     "url": "/parliament/static/js/runtime~main.f5f773ca.js"
   },
   {
-    "revision": "4d75396e1119ae29f631",
-    "url": "/parliament/static/js/main.4d75396e.chunk.js"
+    "revision": "2b1e6b52a28762b3dc9c",
+    "url": "/parliament/static/js/main.2b1e6b52.chunk.js"
   },
   {
-    "revision": "01353336c157a28a4e81",
-    "url": "/parliament/static/js/1.01353336.chunk.js"
+    "revision": "ec03ebe824af589f7d0b",
+    "url": "/parliament/static/js/1.ec03ebe8.chunk.js"
   },
   {
-    "revision": "4d75396e1119ae29f631",
-    "url": "/parliament/static/css/main.0b57c19d.chunk.css"
+    "revision": "2b1e6b52a28762b3dc9c",
+    "url": "/parliament/static/css/main.dff92e8e.chunk.css"
   },
   {
-    "revision": "01353336c157a28a4e81",
-    "url": "/parliament/static/css/1.64cac4ec.chunk.css"
+    "revision": "ec03ebe824af589f7d0b",
+    "url": "/parliament/static/css/1.ad599cdb.chunk.css"
   },
   {
-    "revision": "2082d8da049e6aac46e26b7d1f71a021",
+    "revision": "1aefbe6f5f33bb73fe711e535630a368",
     "url": "/parliament/index.html"
   }
 ];
