@@ -50,6 +50,10 @@ class FeedItem {
   getPageLink() {
     return routes.feedItem.replace(':itemId', this.id);
   }
+
+  getPDFDocument() {
+    return this.author === 'senate' ? this.link.replace('html', 'pdf') : false;
+  }
 }
 
 FeedItem.AUTHORS = ['senate', 'assembly', 'constitutionalCouncil', 'other'];
